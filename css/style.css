@@ -60,11 +60,11 @@
     font-family: Rubik-Medium;
     font-size: 16px;
     color: #E5261E;
-    margin-left: 32px;
+    margin-left: 10px;
 }
 .header__auth{
-    width: 113px;
-    height: 38px;
+    width: 83px;
+    height: 28px;
     border: none;
     background-color: #E5261E;
     color: #ffffff;
@@ -277,14 +277,32 @@ transition: opacity 0.3s ease;
 @media screen and (max-width: 390px){
     @media(hover:none){
         .container{
+            width: 390px;
             margin: 0 auto;
         }
         .header{
-            height: 40px;
+            height: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 32px;
+            margin-top: 15px;
+        }
+        .header__logo{
+            display: flex;
+            align-items: center;
+        }
+        .header__logo img{
+            width: 27px;
+            height: 26px;
+        }
+        .header__search_txt {
+            border: none;
+            border-bottom: 1px solid #333333 ;
+            width: 120px;
+            height: 25px;
+            font-size: 16px;
+            color:#333333;
+            font-family: Rubik-Medium;
         }
         .header__logo_name{
         display: none;
