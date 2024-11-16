@@ -108,6 +108,7 @@
     justify-content: space-between;
 }
 .New{
+    margin: 0 auto;
     width: 134px;
     height: 28px;
     font-family: Rubik-Medium;
@@ -154,8 +155,7 @@ transition: opacity 0.3s ease;
     opacity: 1;
 }
 .genre{
-    width: 87px;
-    height: 28px;
+    margin: 0 auto;
     font-family: Rubik-Medium;
     color:#333333;
     font-size: 24px;
