@@ -108,7 +108,6 @@
     justify-content: space-between;
 }
 .New{
-    margin: 0 auto;
     width: 134px;
     height: 28px;
     font-family: Rubik-Medium;
@@ -155,7 +154,6 @@ transition: opacity 0.3s ease;
     opacity: 1;
 }
 .genre{
-    margin: 0 auto;
     font-family: Rubik-Medium;
     color:#333333;
     font-size: 24px;
@@ -357,6 +355,7 @@ transition: opacity 0.3s ease;
             gap: 10px;
         }
         .New{
+            margin: 0 auto;
             width: 134px;
             height: 28px;
             font-family: Rubik-Medium;
@@ -410,11 +409,10 @@ transition: opacity 0.3s ease;
             opacity: 1;
         }
         .genre{
+            margin: 18px auto 8px auto;
             font-family: Rubik-Medium;
             color: #333333;
             font-size: 18px;
-            margin-bottom: 8px;
-            margin-top: 18px;
         }
         .genres {
             /* width: 390px; */
