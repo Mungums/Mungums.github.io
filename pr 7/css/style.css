@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+.container {
+    width: 1180px;
+    /* background-color: purple; */
+    margin: 0 auto;
+    
+}
+.header{
+    height: 40px;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo_name {
+    margin-left: 11.88px;
+    font-family: Rubik-Medium;
+    font-size: 20px;
+    color: #333333;
+}
+
+.header__search_txt {
+    border: none;
+    border-bottom: 1px solid #333333 ;
+    width: 220px;
+    height: 25px;
+    font-size: 16px;
+    color:#333333;
+    font-family: Rubik-Medium;
+}
+.header__search_txt::placeholder{
+    font-size: 16px;
+    font-family: Rubik-Regular;
+    color: #828282;
+}
+.header__search_txt:focus{
+    outline: none;
+}
+.header__search_btn{
+    border:none;
+    background: none;
+    font-family: Rubik-Medium;
+    font-size: 16px;
+    color: #E5261E;
+    margin-left: 32px;
+}
+.header__auth{
+    width: 113px;
+    height: 38px;
+    border: none;
+    background-color: #E5261E;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Rubik-Medium;
+    border-radius: 4px;
+}
+.header__auth:hover{
+    background-color: #CC221B;
+}
+.menu {
+    width: 311px;
+    height: 42px;
+    margin: 44px auto 32px auto;
+    /* background-color: papayawhip; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_ui{
+    text-decoration: none;
+    font-family: Rubik-Medium;
+    font-size: 28px;
+    color: #333333;
+}
+.menu_ui:focus,
+.menu_ui:active{
+    color: #E5261E;
+    padding-bottom: 9px ;
+    border-bottom: 2px solid #E5261E;
+}
+.overflow{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.New-films{
+    width: 1180px;
+    height: 434px;
+    /* background-color: darkturquoise; */
+    display: flex;
+    justify-content: space-between;
+}
+.New{
+    width: 134px;
+    height: 28px;
+    font-family: Rubik-Medium;
+    color:#333333;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.movie-item {
+    position: relative;
+    width: 280px;
+    height: 434px;
+    display: flex;
+    flex-direction: column;
+}
+.preview{
+    width: 280px;
+    height: 370px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Name_of_film{
+    font-size: 20px;
+    font-family: Rubik-Regular;
+    color: #333333;
+}
+.movie__gallery_description {
+    font-family: Rubik-Regular;
+font-size: 16px;
+color: #f2f2f2;
+height: 370px;
+background-color: rgba(51, 51, 51, 0.8);
+border-radius: 8px;
+padding: 16px;
+line-height: 140%;
+box-sizing: border-box;
+position: absolute;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+.movie-item:hover .movie__gallery_description {
+    opacity: 1;
+}
+.genre{
+    width: 87px;
+    height: 28px;
+    font-family: Rubik-Medium;
+    color:#333333;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+.genres{
+    width: 1180px;
+    height: 208px;
+    /* background-color: midnightblue; */
+    display: flex;
+    justify-content: space-between;
+}
+.genre_item_comedy{
+    width: 280px;
+    height: 208px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right bottom, #F2C94C 1%, #F29A4A 100%);
+    opacity: 0.9;
+}
+.genre_item_comedy:hover{
+    opacity: 1;
+}
+.genre_item_drama{
+    width: 280px;
+    height: 208px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right bottom, #F2994A 1%, #EB5757 100%);
+    opacity: 0.9;
+}
+.genre_item_drama:hover{
+    opacity: 1;
+}
+.genre_item_fantasy{
+    width: 280px;
+    height: 208px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right bottom, #56CCF2 1%, #2F80ED 100%);
+    opacity: 0.9;
+}
+.genre_item_fantasy:hover{
+    opacity: 1;
+}
+.genre_item_horror{
+    width: 280px;
+    height: 208px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right bottom, #828282 1%, #333333 100%);
+    opacity: 0.9;
+}
+.genre_item_horror:hover{
+    opacity: 1;
+}
+.emoji{
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+.Name_of_genre{
+    font-size: 20px;
+    font-family: Rubik-Regular;
+    color: #ffffff;
+}
+.container_f{
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 72px;
+    background-color: #f2f2f2;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.logo_f{
+    width: 32px;
+    height: 64px;
+    margin-left: 130px;
+    margin-right: 40px;
+}
+.footer_description1{
+    font-size: 16px;
+    font-family: Rubik-Regular;
+    display: flex;
+    flex-direction: column ;
+    color: #333333;
+}
+.contact{
+    color: #1F4766;
+    font-family: Rubik-Medium;
+    text-decoration: none;
+}
+
+.comedy{
+    background: linear-gradient(#F2C94C,#F29A4A);
+}
+@media screen and (max-width: 390px){
+        .container{
+            width: 390px;
+            margin: 0 auto;
+        }
+        .header {
+            height: 20px;
+            display: flex;
+            margin-top: 15px;
+            justify-content: space-evenly;
+            padding-right: 15px;
+        }
+        .header__logo{
+            display: flex;
+            align-items: center;
+            margin-left: -20px;
+        }
+        .header__logo img{
+            width: 27px;
+            height: 26px;
+        }
+        .header__search_txt {
+            border: none;
+            border-bottom: 1px solid #333333 ;
+            width: 120px;
+            height: 25px;
+            font-size: 16px;
+            color:#333333;
+            font-family: Rubik-Medium;
+        }
+        .header__search_txt::placeholder{
+            font-size: 11px;
+            font-family: Rubik-Regular;
+            color: #828282;
+        }
+        .header__search_btn{
+            border:none;
+            background: none;
+            font-family: Rubik-Medium;
+            font-size: 11px;
+            color: #E5261E;
+            margin-left: 10px;
+        }
+        .header__auth{
+            width: 73px;
+            height: 28px;
+            border: none;
+            background-color: #E5261E;
+            color: #ffffff;
+            font-size: 11px;
+            font-family: Rubik-Medium;
+            border-radius: 4px;
+        }
+        .header__auth:active{
+            background-color: #CC221B;
+        }
+        .menu {
+            width: 390px;
+            height: 0px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .menu_ui{
+            text-decoration: none;
+            font-family: Rubik-Medium;
+            font-size: 18px;
+            color: #333333;
+        }
+        .overflow{
+            overflow-y: hidden;
+            overflow-x: scroll;
+            padding: 8px;
+        }
+        .New-films{
+            width: 390px;
+            height: 300px;
+            /* background-color: darkturquoise; */
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .New{
+            width: 134px;
+            height: 28px;
+            font-family: Rubik-Medium;
+            color:#333333;
+            font-size: 18px;
+            margin-bottom: 2px;
+        }
+        .movie-item {
+            position: relative;
+            width: 170px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+        .preview{
+            width: 170px;
+            height: 320px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+        .movie-item img {
+            height: 70%;
+        }
+        .Name_of_film{
+            font-size: 14px;
+            font-family: Rubik-Regular;
+            color: #333333;
+        }
+        .header__logo_name{
+        display: none;
+        }
+        .movie__gallery_description {
+            font-family: Rubik-Regular;
+        font-size: 11px;
+        color: #f2f2f2;
+        width: 170px;
+        height: 70%;
+        background-color: rgba(51, 51, 51, 0.8);
+        border-radius: 8px;
+        padding: 6px;
+        line-height: 140%;
+        box-sizing: border-box;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+        
+        .movie-item:active .movie__gallery_description {
+            opacity: 1;
+        }
+        .genre{
+            font-family: Rubik-Medium;
+            color: #333333;
+            font-size: 18px;
+            margin-bottom: 8px;
+            margin-top: 18px;
+        }
+        .genres {
+            /* width: 390px; */
+            height: 146px;
+            /* background-color: darkturquoise; */
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        .genre_item_comedy{
+            width: 223px;
+            height: 146px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(to right bottom, #F2C94C 1%, #F29A4A 100%);
+            opacity: 0.9;
+        }
+        .genre_item_drama{
+            width: 223px;
+            height: 146px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(to right bottom, #F2994A 1%, #EB5757 100%);
+            opacity: 0.9;
+        }
+        .genre_item_drama:active{
+            opacity: 1;
+        }
+        .genre_item_fantasy{
+            width: 223px;
+            height: 146px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(to right bottom, #56CCF2 1%, #2F80ED 100%);
+            opacity: 0.9;
+        }
+        .genre_item_fantasy:active{
+            opacity: 1;
+        }
+        .genre_item_horror{
+            width: 223px;
+            height: 146px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(to right bottom, #828282 1%, #333333 100%);
+            opacity: 0.9;
+        }
+
+        .genre_item_comedy:active{
+            opacity: 1;
+        }
+        .genre_item_horror:active{
+            opacity: 1;
+        }
+        .container_f{
+            width: 100%;
+            height: 120px;
+            margin: 0 auto;
+            margin-top: 72px;
+            background-color: #f2f2f2;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+        .logo_f{
+            width: 22px;
+            height: 44px;
+            margin-left: 30px;
+            margin-right: 40px;
+        }
+        .footer_description1{
+            font-size: 10px;
+            font-family: Rubik-Regular;
+            display: flex;
+            flex-direction: column ;
+            color: #333333;
+        }
+        .contact{
+            color: #1F4766;
+            font-family: Rubik-Medium;
+            text-decoration: none;
+        }
+        
+        .comedy{
+            background: linear-gradient(#F2C94C,#F29A4A);
+        }
+    }
